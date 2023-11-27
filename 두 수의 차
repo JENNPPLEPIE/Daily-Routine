@@ -1,0 +1,8 @@
+// 정수 num1 - num2 값을 return 하도록 solutio 함수를 만들어 주세요.
+
+class Solution {
+    fun solution(num1: Int, num2: Int): Int {
+        
+        return num1 - num2
+    }
+}
