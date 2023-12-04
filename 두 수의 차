@@ -88,3 +88,29 @@ class Solution {
         return ((num1.toDouble()/num2.toDouble())*1000).toInt()     //정수를 뽑아내라고 해서 .toInt를 했다고 함
     }
 }
+
+
+
+
+
+
+
+
+// 각도기 - 실패
+class Solution {
+    fun solution(angle: Int): Int {
+        var answer: Int = 0
+        
+        if (0< angle < 90){
+            answer =1
+        } else if (angle ==90){
+            answer =2
+        } else if (90< angle <180){
+            answer = 3
+        } else if (angle == 180){
+            answer = 4
+        }
+        
+        return answer
+    }
+}
