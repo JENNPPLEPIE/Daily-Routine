@@ -96,7 +96,9 @@ class Solution {
 
 
 
-// 각도기 - 실패
+// 각도기
+
+//실패 예시
 class Solution {
     fun solution(angle: Int): Int {
         var answer: Int = 0
@@ -112,5 +114,23 @@ class Solution {
         }
         
         return answer
+    }
+}
+
+//각도기
+
+//성공 예시
+
+class Solution {
+    fun solution(angle: Int): Int {
+        var ans: Int = 0
+        when(angle) {
+            in 1.. 89 -> ans = 1
+            90 -> ans = 2 
+            in 91 .. 179 -> ans = 3// return 3
+            180 ->  ans =4 //return 4
+        }
+        
+        return ans;        
     }
 }
