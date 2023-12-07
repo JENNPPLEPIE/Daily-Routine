@@ -267,3 +267,38 @@ class Solution {
 }
 
 
+//or
+
+class Solution {
+    fun solution(num: Int): String {
+        return when(num % 2) {
+            0 -> "Even"
+            else -> "Odd"
+        }
+    }
+}
+
+
+
+//or
+
+
+class Solution {
+  fun solution(num: Int): String {
+    return when (num % 2 == 0) {
+      true -> "Even"
+      else -> "Odd"
+    }
+  }
+}
+
+//or
+
+class Solution {
+       fun solution(num: Int): String {
+          var answer = ""
+          if(num % 2 == 0) answer = "Even" else answer = "Odd"
+          return answer
+       }
+}
+
