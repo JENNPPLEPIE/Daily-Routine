@@ -302,3 +302,68 @@ class Solution {
        }
 }
 
+
+
+
+// 평균값 구하기
+
+
+class Solution {
+    fun solution(arr: IntArray): Double 
+    {
+        return arr.average()
+    }
+}
+
+or
+
+
+class Solution {
+    fun solution(arr: IntArray): Double {
+        return arr.sum().toDouble() / arr.size
+    }
+}
+
+
+or 
+
+class Solution {
+    fun solution(arr: IntArray): Double {
+        var answer = 0
+        for (i in arr) {
+            answer += i
+        }
+        return answer.toDouble() / arr.size
+    }
+}
+
+or 
+
+class Solution {
+    fun solution(arr: IntArray): Double {
+        var answer:Double = 0.0
+
+        for(i in arr) 
+            answer += i
+
+        answer /= arr.size
+        return answer
+    }
+}
+
+
+//약수의 합
+
+class Solution {
+    fun solution(n: Int): Int {
+        var answer = 0
+        for (i in 1..n) {
+            if (n % i == 0){
+                answer += i
+            }
+        }
+        
+        return answer
+    }
+}
+
